@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgba(98, 88, 245, 0.9), rgba(219, 217, 255, 0.8)), url(https://images.unsplash.com/photo-1569437061233-5befcf96ee45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1{
+  font-family: "Ubuntu";
+  font-size:2em;
+  font-weight: 700;
+}
+
+label{
+  font-family: "Ubuntu";
+  font-size:1.15em;
+  font-weight: 500;
+}
+p,
+#name-label,
+#number-label,
+#email-label{
+  font-family: "Ubuntu";
+  font-size:1.15em;
+  font-weight: 700;
+}
+
+#title {
+  margin: auto;
+  padding-top: 2%;
+  text-align: center;
+  color: white;
+}
+#description {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  font-size: 1.3em;
+  width: 40%;
+  color: white;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  background-color: rgba(24, 21, 56, 0.8);
+  color: white;
+  padding: 20px 50px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=radio],
+input[type=checkbox],
+#dropdown{
+  padding: .7em;
+  margin-top: 1em;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+#dropdown{
+  border-radius: 10px;
+}
+
+input[type=radio],
+input[type=checkbox]{
+  cursor: pointer;
+}
+
+.textarea-desc {
+  margin: .5em auto;
+  line-height: 1.5em;
+}
+
+textarea {
+  margin-top: .5em;
+  width: 100%;
+  resize:none;
+  height: 100px; 
+  border-radius: 10px;
+}
+
+#submit {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 1em;
+  background-color: rgba(98, 88, 245, 0.9);
+  color: white;
+  border: none;
+  font-family: "Ubuntu";
+  font-weight: 800;
+  cursor: pointer;
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+  box-shadow: 0 0 20px rgba(30, 6, 40, 0.5);
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: rgba(24, 21, 56, 0.8);
+}

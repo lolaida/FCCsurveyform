@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Friendship Survey Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id=title>Friendship Survey Form</h1>
+  <p id="description">Thanks for being my friend! Please fill out this quick survey so we can decide how we should move forward!</p>
+    <!--beginning of form-->
+  <form id="survey-form">
+    <!--Basic Info-->
+    <!--Name-->
+    <div class="form-group">
+    <label for="name" id="name-label">Name:</label>
+    <input 
+           type="text" 
+           name="name" 
+           id="name" 
+           placeholder="Enter your name" 
+           required>
+    </div>
+     <!--Age Input-->
+      <div class="form-group">
+    <label for="age" id="number-label">Age:</label> 
+    <input type="number" name="age" id="number" min="15" max="80" placeholder="Enter your age" required>
+      </div>
+    <!--Email Input-->
+      <div class="form-group">
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </div>
+    <!--Dropdown menu-->
+    <div class="form-group">
+    <p>Which option best describes your role?</p>
+    
+    <select id="dropdown" name="dropdown">
+      <option value="Emotional Support Friend">Emotional Support Friend</option>
+      
+      <option value="Can Make You Laugh Friend">Can Make You Laugh Friend</option>
+      
+      <option value="I Send Hella Memes Friend">I Send Hella Memes Friend</option>
+      
+      <option value="Spiritual Friend">Spiritual Friend</option>
+      
+      <option value="IDK but I'm happy to be here Friend">IDK but I'm happy to be here Friend</option>
+      
+      <option value="We Haven't Spoken in 3 Months Friend">We Haven't Spoken in 3 Months Friend</option>
+      
+      <option value="All of the Above (I think) Friend">All of the Above (I think) Friend</option>
+    </select>
+    </div>
+    
+    <!--Radio Button Section - Qualities-->
+    <div class="form-group">
+    <p>Your Favorite Quality in Me:</p>
+      
+    <!--Quality 1-->
+    <label>
+      <input 
+             type="radio" 
+             name="quality" 
+             id="humor" 
+             value="humor"
+             checked
+             /> Your Humor</label>
+      
+      
+    <!--Quality 2-->
+      <label>
+        <input 
+               type="radio" 
+               name="quality" 
+               id="open" 
+               value="open"
+     /> Your Openness</label>
+      
+    <!--Quality 3-->
+      <label>
+      <input 
+             type="radio" 
+             name="quality" 
+             id="empathy" 
+             value="empathy"
+    /> Your Empathy</label>
+      
+    <!--Quality 4-->
+      <label>
+      <input 
+             type="radio" 
+             name="quality" 
+             id="creative" 
+             value="creativity"
+      /> Your Creativity</label>
+      
+    <!--Quality 5-->
+      <label>
+      <input 
+             type="radio" 
+             name="quality" 
+             id="memes" 
+             value="memes"
+      /> Your Memes</label>
+    </div>
+    
+    <!-- Checkbox Section-->
+    <div class="form-group">
+    <p>What do you envision yourself doing with me in the future? (Select all that apply)</p>
+      <label>
+        <input 
+           type="checkbox" 
+           name="games" 
+           id="act1" 
+           value="games"
+        /> Playing video and board games together</label>
+   
+    <label>
+    <input 
+           type="checkbox" 
+           name="vacation" 
+           id="act2" 
+           value="vacation"
+    /> Going on vacations together (big or small)</label>
+    
+    <label>
+      <input 
+             type="checkbox" 
+             name="crying" 
+             id="act3" 
+             value="crying"
+      /> Crying about life together then laughing about it in the same breath</label>
+      
+    <label>
+      <input 
+             type="checkbox" 
+             name="tv" 
+             id="act4" 
+             value="tv"
+    /> Binge watching shows and movies together (most likely anime-related)</label>
+    
+     <label>
+       <input 
+              type="checkbox" 
+              name="hobby" 
+              id="act5" 
+              value="hobby"
+    /> Learning a new hobby or skill together</label>
+    
+    <label>
+      <input 
+             type="checkbox" 
+             name="business" 
+             id="act6" 
+             value="business"
+             /> Creating a business together.</label>
+    </div>
+    <!--Additional Comments Section-->
+    <p class="textarea-desc">Have anything you'd like to add or say to me? Anything is acceptable from asking to make plans to giving me a movie, book, or show recommendation! Just enter that here: </p>
+    <textarea name="additional-comments" id="additional-comments" placeholder="Additional Comments"></textarea>
+    <!--submit button-->
+    <input type="submit" value="Submit" id="submit">
+    
+  </form>
+    
+  </body>
+  </html>
